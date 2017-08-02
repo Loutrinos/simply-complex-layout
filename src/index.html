@@ -50,9 +50,87 @@
 					<button class="ui large primary button">CREATE ACCOUNT</button>
 				</div>
 			</div>
+			<nav class="primary-menu">
+				<ul class="ui menu primary">
+					<li class="item"><a href="#">Home Primary Link 1</a></li>
+					<li class="item"><a href="#">Home Primary Link 2</a></li>
+					<li class="active item"><a href="#">Home Primary Link 3</a></li>
+					<li class="item"><a href="#">Home Primary Link 4</a></li>
+					<li class="item"><a href="#">Home Primary Link 5</a></li>
+				</ul>
+			</nav>
+			<nav class="secondary-menu">
+				<ul class="ui menu secondary">
+					<li class="item"><a href="#">Home Secondary Link 1</a></li>
+					<li class="item"><a href="#">Home Secondary Link 2</a></li>
+					<li class="item"><a href="#">Home Secondary Link 3</a></li>
+					<li class="active item"><a href="#">Home Secondary Link 4</a></li>
+					<li class="item"><a href="#">Home Secondary Link 5</a></li>
+				</ul>
+			</nav>
 		</header>
+		<div class="content" role="content">
+			<aside class="left-section">
+				<div class="ui search">
+					<div class="ui icon input">
+						<i class="search icon"></i>
+	  					<input class="prompt" type="text" placeholder="Find stuff">
+					</div>
+					<div class="results"></div>
+				</div>
+				<div class="left-menu">
+					<div class="menu-buttons">
+						<button class="ui button primary">Show</button>
+						<button class="ui button basic">Clear</button>
+					</div>
+					<div class="menu-filters">
+						<span class="text">Simple Text: </span>
+						<a class="ui circular label grey" href="#">3</a>
+						<a class="ui circular label grey" href="#">6</a>
+						<a class="ui circular label grey" href="#">12</a>
+					</div>
+					<div class="menu-list ui vertical menu">
+						<a href="#" class="item">
+							<span class="ui checkbox">
+								<label>Left Menu 1</label>
+								<input type="checkbox" name="example">
+							</span>
+						</a>
+						<a href="#" class="active item">
+							<span class="ui checkbox">
+								<label>Left Menu 1</label>
+								<input type="checkbox" name="example">
+							</span>
+						</a>
+						<a href="#" class="item">
+							<span class="ui checkbox">
+								<label>Left Menu 1</label>
+								<input type="checkbox" name="example">
+							</span>
+						</a>
+						<a href="#" class="item">
+							<span class="ui checkbox">
+								<label>Left Menu 1</label>
+								<input type="checkbox" name="example">
+							</span>
+						</a>
+						<a href="#" class="item">
+							<span class="ui checkbox">
+								<label>Left Menu 1</label>
+								<input type="checkbox" name="example">
+							</span>
+						</a>
+					</div>
+				</div>
+			</aside>
+			<section class="main-content"></section>
+			<aside class="right-section"></aside>
+		</div>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.11/semantic.min.js"></script>
+	<script>
+		$('.ui.dropdown').dropdown();
+	</script>
 </body>
 </html>
