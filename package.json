@@ -4,8 +4,8 @@
   "description": "An attempt to create a complex modular layout in SCSS using Grid Layout, Flex and Box model",
   "main": "index.js",
   "scripts": {
-    "build-css": "node-sass --include-path scss src/scss/main.scss dist/main.css",
-    "build-assets": "cpx \"src/*.html\" dist",
+    "build-css": "node-sass --include-path scss src/scss/main.scss main.css",
+    "build-assets": "cpx \"src/*.html\"  /",
     "watch": "nodemon --ignore dist/ -e scss,html -x \"npm run build-assets && npm run build-css\"",
     "server": "http-server ./dist"
   },
