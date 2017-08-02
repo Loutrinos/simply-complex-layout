@@ -1,0 +1,28 @@
+{
+  "name": "simply-complex-layout",
+  "version": "0.0.1",
+  "description": "An attempt to create a complex modular layout in SCSS using Grid Layout, Flex and Box model",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss src/scss/main.scss main.css",
+    "build-assets": "cpx \"src/*.html\"  /",
+    "watch": "nodemon --ignore dist/ -e scss,html -x \"npm run build-assets && npm run build-css\"",
+    "server": "http-server ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Loutrinos/simply-complex-layout.git"
+  },
+  "author": "George Antonakos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Loutrinos/simply-complex-layout/issues"
+  },
+  "homepage": "https://github.com/Loutrinos/simply-complex-layout#readme",
+  "devDependencies": {
+    "cpx": "^1.5.0",
+    "http-server": "^0.10.0",
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.11.0"
+  }
+}
